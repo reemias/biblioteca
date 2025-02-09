@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="imagex/png" href="img/icons8-chat-48.png">
+    <title>Jornal do Dev</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="content">
+        <div class="header">
+            <h1>Free Book - AL</h1>
+        </div>
+        <div class="logotipo">
+            <img src="https://img.freepik.com/premium-vector/yellow-black-book-logo-with-gold-outline-black-background_853558-848.jpg" style="height: 140px;
+            width: 240px;">
+        </div>
+        <div class="nav">
+            <nav>
+                <a href="index.html">
+                    <button>Feed</button>
+                </a>
+                <a href="">
+                    <button>Noticias</button>
+                </a>
+                <a href="">
+                    <button>Cursos</button>
+                </a>
+                <a href="">
+                    <button>Login</button>
+                </a>
+                <a href="" id="apagar">
+                    <button>Sobre nós</button>
+                </a>
+            </nav>
+            <div class="logo">
+                <div class="barra">
+                    <div id="caixa" class="input-group mb-1">
+                        <select class="form-select" id="inputGroupSelect02">
+                          <option selected>O que procura ?</option>
+                          <option value="1">nossa comunidade</option>
+                          <option value="2">Loja</option>
+                          <option value="3">sobre</option>
+                        </select>
+                        <label class="input-group-text" for="inputGroupSelect02">Options</label>
+                    </div>
+                </div>
+                <img src="https://static.wixstatic.com/media/713b90_7841ba78e810446f8765776b69ee76e3~mv2.png" alt="" >
+                <button type="button" class="btn btn-primary position-relative">
+                    Perfil
+                    <span class="position-absolute top-0 start-100 translate-middle p-2 bg-danger border border-light rounded-circle">
+                      <span class="visually-hidden">New alerts</span>
+                    </span>
+                  </button>
+            </div>
+        </div>
+        <div class="main">
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                            increva-se no site
+                        </button>
+                        <br>
+                        <!--começando a parte do chate-->
+                        <marquee class="letreiro"
+                        style="
+                           
+                           padding: 10px;
+                           
+                           background-color: black;
+                           color: white;
+                           font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+                           font-size: 24px;
+                           width: 100%;
+                        
+                        "
+                         behavior="" direction="" onfinish> Olá , seja bem vindo ao Jornal do Dev ! aqui você aprende mais </marquee>
+                        <br>
+                        <div class="tabela">
+                            <div class="card" style="width: 18rem;">
+                                <img src="https://cronicasdagaveta.wordpress.com/wp-content/uploads/2017/03/tumblr_o4vceqwowf1qib167o1_500.jpg?w=640" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                  <h5 class="card-title">Bela Arte</h5>
+                                  
+                                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                                </div>
+                              </div>
+                              <div class="card" style="width: 18rem;">
+                                <img src="https://plus.unsplash.com/premium_photo-1676955434748-52f40a03a511?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8ZmxvcmVzJTIwbW9ydGFzfGVufDB8fDB8fHww" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                  <h5 class="card-title">Sangrar</h5>
+                                  
+                                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                                </div>
+                              </div>
+                              <div class="card" style="width: 18rem;">
+                                <img src="https://i.pinimg.com/236x/2f/b9/35/2fb935ef17929074fddfe8eb6f3b6cf2.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                  <h5 class="card-title">Bela Negra</h5>
+                                  
+                                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                                </div>
+                              </div>
+                              <div class="card" style="width: 18rem;">
+                                <img src="https://images.unsplash.com/photo-1520857449136-3a255278db86?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8ZmxvcmVzJTIwbW9ydGFzfGVufDB8fDB8fHww" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                  <h5 class="card-title">Buscar Amor</h5>
+                                  
+                                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                                </div>
+                              </div>
+                        </div>
+                        <br>
+                        <div class="col-md-6">
+                            <div class="card shadow-sm mb-4">
+                                <div class="card-body">
+                                    <div class="input-group mb-3">
+                                        <input type="text" id="inputMensagem" class="form-control" placeholder="O que você está pensando?" required>
+                                        <div class="input-group-append">
+                                            <button class="btn btn-success" id="botaoEnviar">
+                                                <span class="material-symbols-outlined">send_and_archive</span> Publicar
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="input-group mb-3">
+                                        <div class="custom-file">
+                                            <input type="file" id="inputFoto" accept="image/*" class="custom-file-input">
+                                            <label class="custom-file-label" for="inputFoto">
+                                                <span class="material-symbols-outlined">image</span> Escolher imagem
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <main id="chatMessages" class="mt-4">
+                                <!-- Postagens serão adicionadas dinamicamente aqui -->
+                            </main>
+                        </div>
+
+                        <br>
+                        <!-- Modal -->
+                        <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h1 class="modal-title fs-5" id="staticBackdropLabel">Bem vindo ao Jornal do Dev</h1>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+            
+                                        <!--forme do modal começa aqui-->
+                                        <div class="mb-3">
+                                            <label for="exampleFormControlInput1" class="form-label">Email</label>
+                                            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+                                          </div>
+            
+                                        <label for="inputPassword5" class="form-label">Senha</label>
+                                        <input type="password" id="inputPassword5" class="form-control" aria-describedby="passwordHelpBlock" placeholder="crie sua senha...">
+                                            <div id="passwordHelpBlock" class="form-text">
+                                                Sua senha tem que ter 8 digitos , com caracter especial.
+                                            </div>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">fechar</button>
+                                        <button type="button" class="btn btn-primary">inscrever</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+            <div class="pedidos">
+                <div class="pedido_1">
+                    <div class="imagem">
+                        <img src="https://i.ytimg.com/vi/TC_bZKEvFtM/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLDFjNM7umpBJN9fD3bIl8XIkAAKnQ" alt="">
+                    </div>
+                    <p>Sistema de Caixa</p>
+                    <div class="botao">
+                        <button onclick="confirmar('caixa')">saiba mais</button>
+                    </div>
+                </div>
+                <div class="pedido_2">
+                    <div class="imagem">
+                        <img src="https://www.omegla.chat/images/AnonymousChat.webp" alt="">
+                    </div>
+                    <p>Sistema de Chat Anônimo</p>
+                    <div class="botao">
+                        <button onclick="confirmar('chat')">saiba mais</button>
+                    </div>
+                </div>
+                <div class="pedido_3">
+                    <div class="imagem">
+                        <img src="https://blogdoenem.com.br/wp-content/uploads/2017/03/GPS.jpg" alt="">
+                    </div>
+                    <p>Sistema de Mapeamento por GPS</p>
+                    <div class="botao">
+                        <button onclick="confirmar('mapa')">saiba mais</button>
+                    </div>
+                </div>
+            </div>
+
+            <br>
+        </div>
+        <br>
+        <br>
+        <div class="footer">
+            <nav>
+                <a href="https://vagas-74cb2-daf5b.web.app/index.html">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="100" height="30" fill="currentColor" class="bi bi-chat-dots" viewBox="0 0 16 16">
+                        <path d="M5 8a1 1 0 1 1-2 0 1 1 0 0 1 2 0m4 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0m3 1a1 1 0 1 0 0-2 1 1 0 0 0 0 2"/>
+                        <path d="m2.165 15.803.02-.004c1.83-.363 2.948-.842 3.468-1.105A9 9 0 0 0 8 15c4.418 0 8-3.134 8-7s-3.582-7-8-7-8 3.134-8 7c0 1.76.743 3.37 1.97 4.6a10.4 10.4 0 0 1-.524 2.318l-.003.011a11 11 0 0 1-.244.637c-.079.186.074.394.273.362a22 22 0 0 0 .693-.125m.8-3.108a1 1 0 0 0-.287-.801C1.618 10.83 1 9.468 1 8c0-3.192 3.004-6 7-6s7 2.808 7 6-3.004 6-7 6a8 8 0 0 1-2.088-.272 1 1 0 0 0-.711.074c-.387.196-1.24.57-2.634.893a11 11 0 0 0 .398-2"/>
+                      </svg>
+                </a>
+                <a href="https://reemias.github.io/trabalho/">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="100" height="30" fill="currentColor" class="bi bi-cart4" viewBox="0 0 16 16">
+                        <path d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5M3.14 5l.5 2H5V5zM6 5v2h2V5zm3 0v2h2V5zm3 0v2h1.36l.5-2zm1.11 3H12v2h.61zM11 8H9v2h2zM8 8H6v2h2zM5 8H3.89l.5 2H5zm0 5a1 1 0 1 0 0 2 1 1 0 0 0 0-2m-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0m9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2m-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0"/>
+                      </svg>
+                </a>
+                <a href="index.html">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="100" height="30" fill="currentColor" class="bi bi-house" viewBox="0 0 16 16">
+                        <path d="M8.707 1.5a1 1 0 0 0-1.414 0L.646 8.146a.5.5 0 0 0 .708.708L2 8.207V13.5A1.5 1.5 0 0 0 3.5 15h9a1.5 1.5 0 0 0 1.5-1.5V8.207l.646.647a.5.5 0 0 0 .708-.708L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293zM13 7.207V13.5a.5.5 0 0 1-.5.5h-9a.5.5 0 0 1-.5-.5V7.207l5-5z"/>
+                      </svg>
+                </a>
+
+            </nav>
+        </div>
+    </div>
+    <script src="pedido.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>

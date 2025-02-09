@@ -1,0 +1,265 @@
+*{
+    margin: 0;
+}
+.content {
+    display: grid;
+    grid-template-areas:
+        'nav'
+        'header'
+        'main'
+        'footer';
+}
+
+.header, .nav, .main, .footer, .ferramentas, .feed {
+    padding: 20px;
+    color: white;
+    text-align: center;
+}
+
+.nav {
+    grid-area: nav;
+    background: linear-gradient(to right, #0319e2, #233a61);
+    display: flex;
+    justify-content: start;
+}
+
+.nav nav{
+    display: flex;
+    justify-content: space-between;
+    width: 40%;
+}
+
+.nav .logo{
+    display: flex;
+    width: 55%;
+    justify-content: center;
+    gap: 60px;
+    
+}
+
+.nav .logo .barra{
+    width: 70%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3px;
+}
+
+.header {
+    background: linear-gradient( rgb(3, 29, 116), #242952, #4b5a75);
+}
+
+#caixa{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+}
+
+.nav .logo img{
+    border-radius: 90px;
+    width: 50px;
+    height: 100%;
+}
+
+.nav nav button{
+    padding: 10px;
+    border-radius: 6px;
+    border: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 17px;
+    background-color: rgba(222, 184, 135, 0);
+    color: white;
+    cursor: pointer;
+}
+
+.nav nav button:hover{
+    background-color: white;
+    color: black;
+    height: 110%;
+}
+
+
+
+.main {
+    grid-area: main;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.main .pedidos{
+    display: flex;
+    justify-content: space-between;
+}
+
+.main .pedidos div{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    
+}
+
+.main .pedidos div img{
+    width: 100%;
+    cursor: pointer;
+}
+
+.main .pedidos div img:hover{
+    opacity: 0.2;
+}
+
+.main .pedidos div button{
+    width: 100%;
+    padding: 5px;
+    border: none;
+    cursor: pointer;
+}
+
+.main .pedidos div button:hover{
+    background-color: rgb(3, 39, 117);
+    color: white;
+}
+
+
+
+.footer {
+    grid-area: footer;
+    display: none;
+}
+
+
+.letreiro{
+    display: none;
+}
+
+.main .tabela{
+    display: flex;
+    width: 70%;
+    gap: 25px;
+}
+
+.main .tabela img{
+    height: 300px;
+}
+
+.main .tabela a{
+    width: 100%;
+}
+
+.logotipo{
+    display: none;
+
+}
+@media screen and (max-width : 700px){
+
+    .logotipo{
+        display: block;
+        background-color: black;
+        width: 100%; display: flex; align-items: center; justify-content: center;
+    }
+
+    .content {
+        display: grid;
+        grid-template-areas:
+            'header'
+            'logotipo'
+            'nav'
+            'main'
+            'footer';
+    }
+    
+    .letreiro{
+        display: block;
+        margin: 0;
+    }
+
+    .main .tabela {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        gap: 15px; /* Ajuste o valor de gap conforme necessário */
+    }
+
+    .main .tabela img {
+        width: 100%;
+        height: auto; /* Para manter a proporção da imagem */
+    }
+
+    .nav {
+        grid-area: nav;
+        background: linear-gradient(to right, #0319e2, #233a61);
+        display: flex;
+        justify-content: center;
+    }
+    
+    .nav nav{
+        display: flex;
+        justify-content: space-between;
+        width: 80%;
+    }
+
+    .nav nav #apagar{
+        display: none;
+    }
+
+    .nav .logo{
+        display: none;
+    }
+
+    .main .pedidos{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .chat{
+        padding: 10px;
+        background-color: black;
+    }
+
+    .main .pedidos div{
+        width: 90%;
+        
+        background-color: rgba(25, 61, 139, 0.781);
+        padding: 5px;
+        color: white;
+        border-radius: 10px;
+    }
+
+    .footer{
+        display: block;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: fixed;
+        margin-top: 92.8vh;
+        width: 100%;
+        background: white;
+        color: black;
+        
+    }
+
+    .footer nav{
+        display: flex;
+        width: 120%;
+        justify-content: space-between;
+        gap: 50px;
+    }
+
+    .footer nav a{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+
+}
